@@ -2,7 +2,7 @@
 
 ### `Deployment Status`
 
-## This project is deployed at [breaking-bad-react](breakingbad-react.vercel.app).
+## This project is deployed at [breaking-bad-react](https://breakingbad-react.vercel.app).
 
 ## Available Scripts
 
