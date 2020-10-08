@@ -1,4 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Breaking Bad | React
+
+### `Deployment Status`
+
+## This project is deployed at [breaking-bad-react](breakingbad-react.vercel.app).
 
 ## Available Scripts
 
