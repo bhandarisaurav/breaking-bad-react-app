@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 const Search = (props) => {
   const [queryText, setQueryText] = useState('');
 
-  const handleSearch = (e) => {
-    setQueryText(e.target.value);
-    props.getQuery(queryText);
+  const handleSearch = (query) => {
+    setQueryText(query);
+    props.getSearchQuery(queryText);
   };
 
   return (
@@ -20,7 +20,8 @@ const Search = (props) => {
           className='form-control'
           placeholder='Search Breaking Bad Characters'
           autoFocus
-          onChange={handleSearch}
+          value={queryText}
+          onChange={(event) => handleSearch(event.target.value)}
         />
       </form>
     </section>
