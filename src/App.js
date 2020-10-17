@@ -4,6 +4,7 @@ import './App.css';
 import CharacterGrid from './components/characters/CharacterGrid';
 import Header from './components/ui/Header';
 import Search from './components/ui/Search';
+import BASE_URL from './components/settings/API';
 
 const App = () => {
   const [items, setItems] = useState([]);
@@ -12,11 +13,7 @@ const App = () => {
 
   useEffect(() => {
     const fetchItems = async () => {
-      const result = await axios(
-        `https://www.breakingbadapi.com/api/characters?name=${query}`
-      );
-      console.log(query);
-      console.log(result.data);
+      const result = await axios(`${BASE_URL}?name=${query}`);
       setItems(result.data);
       setIsLoading(false);
     };
